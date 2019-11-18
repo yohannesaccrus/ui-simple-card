@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+p,
+h1,
+h2 {
+  margin: 0;
+  padding: 0; }
+
+.app {
+  background-color: tomato;
+  height: 100vh; }
+
+body {
+  font-family: "Montserrat", sans-serif; }
+
+button {
+  border: none;
+  transition: all .5s ease-out;
+  cursor: pointer; }
+  button:hover {
+    transform: translateY(-10%); }
+  button:active {
+    transform: translateY(0); }
+  button:focus {
+    outline: 0; }
+
+.card {
+  background-color: #fff;
+  width: 23rem;
+  border-radius: 8px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .card:hover .card__visual {
+    background: url("https://images.unsplash.com/photo-1501504413881-5888acd06076?ixlib=rb-1.2.1&auto=format&fit=crop&w=890&q=80") no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .card__visual {
+    background: url("https://images.unsplash.com/photo-1498750398774-8a1191e2ea2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat;
+    height: 12rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    transition: all .5s ease-out; }
+  .card__texts {
+    padding: 1.5rem; }
+    .card__texts .title {
+      font-size: 1.8rem;
+      color: #57606f; }
+    .card__texts .subtitle {
+      margin: .5rem 0;
+      font-size: 1rem;
+      color: #747d8c; }
+    .card__texts .line {
+      margin: .8rem 0;
+      height: 3px;
+      background-color: tomato;
+      border-radius: 5px;
+      width: 4rem; }
+    .card__texts .desc {
+      text-align: justify;
+      text-indent: 1.5rem;
+      line-height: 1.8rem;
+      color: #747d8c; }
+  .card__likeBtn {
+    background-color: tomato;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    padding: .8rem;
+    border-radius: 50%;
+    color: #fff;
+    transition: all .5s ease-out;
+    cursor: pointer; }
+    .card__likeBtn:hover {
+      background-color: #ff7979; }
+  .card__btn {
+    margin: .8rem 0;
+    text-align: right; }
+    .card__btn button {
+      background-color: tomato;
+      padding: .8rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #fff;
+      border-radius: 5px; }
+      .card__btn button:hover {
+        border-radius: 5px 10px 5px 10px;
+        background-color: #ff7979; }
+  .card__socials {
+    color: #747d8c; }
+    .card__socials .title {
+      font-size: 1.3rem; }
+    .card__socials i {
+      font-size: 1.4rem;
+      margin-top: .5rem;
+      cursor: pointer;
+      transition: all .5s ease-out; }
+      .card__socials i:hover {
+        transform: scale(1.1);
+        color: tomato;
+        margin-right: .5rem; }
+      .card__socials i:not(:last-child) {
+        margin-right: .2rem; }
